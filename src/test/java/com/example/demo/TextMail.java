@@ -21,7 +21,7 @@ public class TextMail {
                 .content("哆啦咪发说啦喜多")
                 .contentType(MailContentTypeEnum.HTML)
                 .targets(new ArrayList<String>() {{
-                    add("lobsterhe@163.com");
+                    add("826149872@qq.com");
                 }})
                 .sender();
     }

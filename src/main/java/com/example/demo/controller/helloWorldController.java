@@ -1,9 +1,11 @@
 package com.example.demo.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.example.demo.entity.UserEntity;
 import com.example.demo.jpa.UserJpa;
 import com.example.demo.service.IGetDoServiceImpl;
 import com.example.demo.util.FactoryUtil;
+import com.example.demo.util.LoggerUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Controller;
@@ -81,6 +83,9 @@ public class helloWorldController {
         if(flag){
             request.getSession().setAttribute("session_user",userEntity);
         }
+        JSONObject object = new JSONObject();
+        object.put("msg","用户"+user.getName()+"登入");
+        request.setAttribute(LoggerUtil.LOGGER_RETURN,object);
         return result;
     }
 }
