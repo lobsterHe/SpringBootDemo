@@ -81,13 +81,13 @@
             <artifactId>jstl</artifactId>
         </dependency>
         <!--Base64-->
-        <dependency>
-            <groupId>trusJavaCertAPI</groupId>
-            <artifactId>iTrusJavaCertAPI</artifactId>
-            <version>2.7.10</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>trusJavaCertAPI</groupId>-->
+            <!--<artifactId>iTrusJavaCertAPI</artifactId>-->
+            <!--<version>2.7.10</version>-->
+            <!--<type>jar</type>-->
+            <!--<scope>compile</scope>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>bouncycastle</groupId>
             <artifactId>bcmail-jdk15</artifactId>
@@ -145,6 +145,18 @@
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>1.9.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.6.1</version>
         </dependency>
 	</dependencies>
 
